@@ -1,0 +1,45 @@
+{{!--
+This template is used for the tag page.
+--}}
+
+{{!-- The tag below means: insert everything in this file
+into the {body} of the default.hbs template --}}
+{{!< default}}
+
+<div class="main-wrap">
+  {{!-- Everything inside the #tag tags pulls data from the tag --}}
+  {{#tag}}
+    {{!-- Special header.hbs partial to generate the <header> tag --}}
+    {{> header background=feature_image}}
+    {{!-- Inject styles of the hero image to make it responsive --}}
+    {{> hero background=feature_image}}
+    <div class="m-hero__content" data-aos="fade-down">
+      <h1 class="m-hero-title bigger">{{name}}</h1>
+      <p class="m-heading__description">
+        {{plural ../pagination.total empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}} {{t "with this tag"}}
+      </p>
+    </div>
+    </section>
+  {{/tag}}
+
+  <div style="width: 100%; display: flex; justify-content: space-around; align-items: center; padding: 1rem 0.5rem 1rem 0.5rem; font-weight: bolder;">
+    <a href="https://www.djvu.in/writing-competition-20">Rules</a>
+    <span>|</span>
+    <a href="https://www.djvu.in/tag/fiction/">Fiction</a>
+    <a href="https://www.djvu.in/tag/non-fiction/">Non-fiction</a>
+    <a href="https://www.djvu.in/tag/poetry/">Poetry</a>
+  </div>
+  
+  <main>
+    <div class="l-content">
+      <div class="l-wrapper" data-aos="fade-up" data-aos-delay="300">
+        <div class="l-grid centered">
+          {{!-- The tag below iterates over all the posts --}}
+          {{> "loop"}}
+        </div>
+      </div>
+      {{!-- Links to Previous/Next posts --}}
+      {{pagination}}
+    </div>
+  </main>
+</div>
