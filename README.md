@@ -35,6 +35,7 @@ To get the latest version please head over the [releases page](https://github.co
 * Subscription form [more info here](https://github.com/eddiesigner/liebling/wiki/How-to-enable-subscribers)
 * Multiple authors
 * Logo support
+* Secondary menu
 * Featured posts and pages
 * Post, Page, Tag, Authors, pages
 * Koenig editor
@@ -86,6 +87,9 @@ To get the latest version please head over the [releases page](https://github.co
 * Chinese Simplified by [IvyB](https://github.com/IvyB)
 * Indonesian by [iqbalbinsb](https://github.com/iqbalbinsb)
 * Lithuanian by [pintom](https://github.com/pintom)
+* Dutch by [Qballjos](https://github.com/Qballjos)
+* Traditional Chinese by [weixiang](https://github.com/weixiang)
+* Persian (Farsi) by [Aminoiz](https://github.com/Aminoiz)
 
 ## Tests performed
 
@@ -106,6 +110,10 @@ Please take a look to this page to see how it works: https://github.com/eddiesig
 To know how to enable the search, comments, subscribers and more, please head to the [Wiki](https://github.com/eddiesigner/liebling/wiki).
 
 If you have any questions or troubles with this product, please feel free to open an issue [here](https://github.com/eddiesigner/liebling/issues).
+
+## Contributing
+
+Contributions are very welcome. First, please read the [Pull Request Guidelines](https://github.com/eddiesigner/liebling/wiki/Pull-Request-Guidelines) on the wiki.
 
 ## Related
 
